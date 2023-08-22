@@ -1,8 +1,9 @@
 name: Node.js Package
 
 on:
-  release:
-    types: [created]
+  push:
+    tags:        
+      - '*'
 
 jobs:
   build:
@@ -11,9 +12,9 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
-      - run: npm ci
-      - run: npm test
+          node-version: 18
+      - run: npm i pnpm -g
+      - run: pnpm i
 
   publish-npm:
     needs: build
@@ -22,9 +23,10 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
-      - run: npm publish
+      - run: npm i pnpm -g
+      - run: pnpm i
+      - run: pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
