@@ -1,0 +1,54 @@
+{
+  "name": "vconsole-mock-xhr",
+  "version": "0.0.1",
+  "description": "plugin",
+  "author": "EduarteXD",
+  "license": "MIT",
+  "homepage": "https://github.com/EduarteXD/vconsole-mock-xhr",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EduarteXD/vconsole-mock-xhr.git",
+    "directory": "src/"
+  },
+  "bugs": {
+    "url": "https://github.com/EduarteXD/vconsole-mock-xhr/issues"
+  },
+  "keywords": [],
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./style.css": {
+      "require": "./dist/index.css",
+      "import": "./dist/index.css",
+      "types": "./dist/index.css"
+    }
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit -p .",
+    "clean": "rimraf ./dist",
+    "tsup": "tsup src/index.ts --dts --format esm,cjs",
+    "build": "pnpm clean && pnpm tsup"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "@tsconfig/node16-strictest-esm": "^1.0.3",
+    "vconsole": "^3.15.1",
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.1",
+    "tsup": "^6.1.2"
+  }
+}

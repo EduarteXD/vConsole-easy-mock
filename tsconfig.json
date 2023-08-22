@@ -1,0 +1,16 @@
+{
+  "extends": "@tsconfig/node16-strictest-esm/tsconfig.json",
+  "compilerOptions": {
+    "lib": ["esnext", "DOM"],
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "declaration": true,
+    "noEmitOnError": true,
+    "allowSyntheticDefaultImports": true,
+    "checkJs": false,
+    "ignoreDeprecations": "5.0",
+    "outDir": "./dist",
+  },
+  "plugins": [{ "name": "typescript-plugin-css-modules" }],
+  "include": ["src/**/*", "../app/hooks", "src/enums", "../app/types"]
+}
