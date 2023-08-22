@@ -1,5 +1,7 @@
 ## vConsole MockXHR Plugin
 
+[![Node.js Package](https://github.com/EduarteXD/vconsole-mock-xhr/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/EduarteXD/vconsole-mock-xhr/actions/workflows/npm-publish.yml)
+
 ![](image.png)
 
 vConsole Mock XMLHttpRequest 请求插件
