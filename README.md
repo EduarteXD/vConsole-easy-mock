@@ -1,14 +1,18 @@
-## vConsole MockXHR Plugin
+## vConsole Easy Mock Plugin
 
 [![Node.js Package](https://github.com/EduarteXD/vconsole-mock-xhr/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/EduarteXD/vconsole-mock-xhr/actions/workflows/npm-publish.yml)
 
-![](image.png)
+### 简介
 
-vConsole Mock XMLHttpRequest 请求插件
+<img src="image.png" style="width: 350px">
 
-### Usage
+vConsole简易Mock请求插件
 
-```
+### 使用说明
+
+安装
+
+```shell
 npm install vconsole-mock-xhr
 // or
 yarn add vconsole-mock-xhr
@@ -16,10 +20,10 @@ yarn add vconsole-mock-xhr
 pnpm install vconsole-mock-xhr
 ```
 
-在程序入口
+在程序入口加入
 
 ```typescript
-import vconsole from 'vconsole'
+import vconsole from 'console'
 
 import 'vconsole-mock-xhr/style.css'
 import { createMockXHRPlugin } from 'vconsole-mock-xhr'
