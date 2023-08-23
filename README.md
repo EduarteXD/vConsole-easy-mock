@@ -4,10 +4,9 @@
 
 ### 简介
 
-<img src="image.png" style="width: 350px">
+<img src="https://github.com/EduarteXD/vConsole-easy-mock/blob/main/image.png?raw=true" style="width: 350px">
 
 vConsole Mock请求插件
-
 
 ### 使用说明
 
