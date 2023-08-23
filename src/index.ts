@@ -179,7 +179,7 @@ class MockedXHR {
   }
 }
 
-export const createMockXHRPlugin = () => {
+export const createEasyMockPlugin = () => {
   ;(window as Window).XMLHttpRequest = MockedXHR
 
   const mockXHRPlugin = new vconsole.VConsolePlugin('mock_xhr', 'MOCK')

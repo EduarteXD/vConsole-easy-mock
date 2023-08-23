@@ -1,4 +1,10 @@
-# vconsole-mock-xhr
+# vconsole-easy-mock
+
+## 0.0.4
+
+### Patch Changes
+
+- change package name
 
 ## 0.0.3
 
