@@ -6,18 +6,19 @@
 
 <img src="image.png" style="width: 350px">
 
-vConsole简易Mock请求插件
+vConsole Mock请求插件
+
 
 ### 使用说明
 
 安装
 
 ```shell
-npm install vconsole-mock-xhr
+npm install vconsole-easy-mock
 // or
-yarn add vconsole-mock-xhr
+yarn add vconsole-easy-mock
 // or
-pnpm install vconsole-mock-xhr
+pnpm install vconsole-easy-mock
 ```
 
 在程序入口加入
@@ -25,9 +26,9 @@ pnpm install vconsole-mock-xhr
 ```typescript
 import vconsole from 'console'
 
-import 'vconsole-mock-xhr/style.css'
-import { createMockXHRPlugin } from 'vconsole-mock-xhr'
+import 'vconsole-easy-mock/style.css'
+import { createEasyMockPlugin } from 'vconsole-easy-mock'
 
 const vc = new vconsole()
-vc.addPlugin(createMockXHRPlugin())
+vc.addPlugin(createEasyMockPlugin())
 ```
