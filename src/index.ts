@@ -186,7 +186,7 @@ export const createEasyMockPlugin = () => {
 
   mockXHRPlugin
     .on('renderTab', (cb) => {
-      cb(`<div class='mxp'></div>`)
+      cb(`<div id='ez-mock'><div class='mxp'></div></div>`)
 
       if (!lock) {
         lock = true

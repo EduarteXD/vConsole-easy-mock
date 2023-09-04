@@ -1,104 +1,107 @@
-.mxp {
-  margin: 15px;
-}
-
-.mxp::after {
-  content: '';
-  display: block;
-  height: 50px;
-}
-
-.req-holder::after {
-  content: '';
-  display: block;
-  border-bottom: 1px solid #7c7c7c;
-  width: calc(100% - 10px);
-  margin: 5px;
-  margin-top: 10px;
-}
-
-.checkbox {
-  margin: 5px;
-  display: inline-grid;
-  place-content: center;
-  appearance: none;
-  background-color: #fff;
-  font: inherit;
-  color: currentColor;
-  width: 1.15em;
-  height: 1.15em;
-  border: 0.15em solid currentColor;
-  border-radius: 0.15em;
-  transform: translateY(-0.075em);
-}
-
-.checkbox::before {
-  content: '';
-  width: 0.65em;
-  height: 0.65em;
-  transform: scale(0);
-  transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em #ee91f7;
-}
-
-.checkbox:checked::before {
-  transform: scale(1);
-}
-
-.method {
-  display: inline-block;
-  margin: 5px;
-  border: 2px solid;
-  border-radius: 2px;
-  padding: 1px 4px;
-}
-
-.method.get {
-  color: rgb(0, 128, 0);
-  background-color: rgba(151, 255, 151, 0.7);
-}
-
-.method.post {
-  color: rgb(128, 128, 0);
-  background-color: rgba(246, 255, 151, 0.7);
-}
-
-.method.put {
-  color: rgb(0, 87, 128);
-  background-color: rgba(151, 200, 255, 0.7);
-}
-
-.method.patch {
-  color: rgb(119, 0, 128);
-  background-color: rgba(248, 151, 255, 0.7);
-}
-
-.method.delete {
-  color: rgb(128, 51, 0);
-  background-color: rgba(255, 205, 151, 0.7);
-}
-
-.method.head {
-  color: rgb(0, 128, 13);
-  background-color: rgba(154, 255, 151, 0.7);
-}
-
-.method.options {
-  color: rgb(128, 0, 0);
-  background-color: rgba(255, 151, 151, 0.7);
-}
-
-.url {
-  display: inline-block;
-  margin: 5px;
-  text-decoration: underline;
-}
-
-.response {
-  display: block;
-  margin: 5px;
-  background-color: var(--VC-BG-3);
-  width: calc(100% - 10px);
-  resize: vertical;
-  padding: 5px 15px;
+#ez-mock {
+  .mxp {
+    margin: 15px;
+  }
+  
+  .mxp::after {
+    content: '';
+    display: block;
+    height: 50px;
+  }
+  
+  .req-holder::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #7c7c7c;
+    width: calc(100% - 10px);
+    margin: 5px;
+    margin-top: 10px;
+  }
+  
+  .checkbox {
+    margin: 5px;
+    display: inline-grid;
+    place-content: center;
+    appearance: none;
+    background-color: #fff;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+  }
+  
+  .checkbox::before {
+    content: '';
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #ee91f7;
+  }
+  
+  .checkbox:checked::before {
+    transform: scale(1);
+  }
+  
+  .method {
+    display: inline-block;
+    margin: 5px;
+    border: 2px solid;
+    border-radius: 2px;
+    padding: 1px 4px;
+  }
+  
+  .method.get {
+    color: rgb(0, 128, 0);
+    background-color: rgba(151, 255, 151, 0.7);
+  }
+  
+  .method.post {
+    color: rgb(128, 128, 0);
+    background-color: rgba(246, 255, 151, 0.7);
+  }
+  
+  .method.put {
+    color: rgb(0, 87, 128);
+    background-color: rgba(151, 200, 255, 0.7);
+  }
+  
+  .method.patch {
+    color: rgb(119, 0, 128);
+    background-color: rgba(248, 151, 255, 0.7);
+  }
+  
+  .method.delete {
+    color: rgb(128, 51, 0);
+    background-color: rgba(255, 205, 151, 0.7);
+  }
+  
+  .method.head {
+    color: rgb(0, 128, 13);
+    background-color: rgba(154, 255, 151, 0.7);
+  }
+  
+  .method.options {
+    color: rgb(128, 0, 0);
+    background-color: rgba(255, 151, 151, 0.7);
+  }
+  
+  .url {
+    display: inline-block;
+    margin: 5px;
+    text-decoration: underline;
+  }
+  
+  .response {
+    display: block;
+    margin: 5px;
+    background-color: var(--VC-BG-3);
+    width: calc(100% - 10px);
+    resize: vertical;
+    padding: 5px 15px;
+  }
+  
 }
