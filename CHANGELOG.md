@@ -1,5 +1,11 @@
 # vconsole-easy-mock
 
+## 0.0.6
+
+### Patch Changes
+
+- css scope
+
 ## 0.0.5
 
 ### Patch Changes
